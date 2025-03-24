@@ -111,7 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="EWSoftware.SandcastleBuilder.Utils">
-      <Version>2024.2.18</Version>
+      <Version>2025.3.22</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
