@@ -2,13 +2,13 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
-using System.Windows.Forms;
 using System.Xml.Linq;
 
-using SandcastleBuilder.Utils;
-using SandcastleBuilder.Utils.BuildComponent;
-using SandcastleBuilder.Utils.BuildEngine;
-using SandcastleBuilder.Utils.ConceptualContent;
+using Sandcastle.Core;
+using Sandcastle.Core.BuildEngine;
+using Sandcastle.Core.ConceptualContent;
+using Sandcastle.Core.PlugIn;
+using Sandcastle.Core.Project;
 
 using XsdDocumentation.Model;
 using XsdDocumentation.PlugIn.Properties;
@@ -24,7 +24,7 @@ namespace XsdDocumentation.PlugIn
     public sealed class XsdPlugIn : IPlugIn
     {
         private ExecutionPoint[] _executionPoints;
-        private BuildProcess _buildProcess;
+        private IBuildProcess _buildProcess;
         private XsdPlugInConfiguration _configuration;
 
         public static string GetHelpFilePath()
@@ -52,7 +52,7 @@ namespace XsdDocumentation.PlugIn
         /// process.</param>
         /// <param name="configuration">The configuration data that the plug-in
         /// should use to initialize itself.</param>
-        public void Initialize(BuildProcess buildProcess, XElement configuration)
+        public void Initialize(IBuildProcess buildProcess, XElement configuration)
         {
             _configuration = XsdPlugInConfiguration.FromXml(buildProcess.CurrentProject, configuration.ToString());
             _buildProcess = buildProcess;

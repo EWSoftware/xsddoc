@@ -65,8 +65,17 @@
     <ComponentConfigurations>
     </ComponentConfigurations>
     <CleanIntermediates>True</CleanIntermediates>
-    <FrameworkVersion>.NET Framework 4.0</FrameworkVersion>
+    <FrameworkVersion>.NET Framework 4.8</FrameworkVersion>
     <PresentationStyle>VS2013</PresentationStyle>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
+    <SyntaxFilters>Standard</SyntaxFilters>
+    <KeepLogFile>True</KeepLogFile>
+    <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
+    <IndentHtml>False</IndentHtml>
+    <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
+    <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
   </PropertyGroup>
   <!--
 		There are no properties for these two groups but they need to appear in order for

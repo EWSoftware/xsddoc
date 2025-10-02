@@ -22,8 +22,7 @@
 
 using System;
 using System.ComponentModel;
-
-using SandcastleBuilder.Utils;
+using Sandcastle.Core;
 
 namespace Sandcastle.Platform.Windows.Design
 {

@@ -1,6 +1,4 @@
-using System;
-
-using SandcastleBuilder.Utils.BuildEngine;
+using Sandcastle.Core.BuildEngine;
 
 using XsdDocumentation.Model;
 
@@ -8,9 +6,9 @@ namespace XsdDocumentation.PlugIn
 {
     internal sealed class MessageReporter : IMessageReporter
     {
-        private BuildProcess _buildProcess;
+        private readonly IBuildProcess _buildProcess;
 
-        public MessageReporter(BuildProcess buildProcess)
+        public MessageReporter(IBuildProcess buildProcess)
         {
             _buildProcess = buildProcess;
         }

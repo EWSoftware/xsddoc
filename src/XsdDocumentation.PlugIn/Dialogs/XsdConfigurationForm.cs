@@ -1,9 +1,8 @@
 ﻿using System.Linq;
 using System.Xml.Linq;
 using System.Windows.Forms;
-
-using SandcastleBuilder.Utils;
-using SandcastleBuilder.Utils.BuildComponent;
+using Sandcastle.Core.PlugIn;
+using Sandcastle.Core.Project;
 
 namespace XsdDocumentation.PlugIn
 {
@@ -19,7 +18,7 @@ namespace XsdDocumentation.PlugIn
         public sealed class Factory : IPlugInConfigurationEditor
         {
             /// <inheritdoc />
-            public bool EditConfiguration(SandcastleProject project, XElement configuration)
+            public bool EditConfiguration(ISandcastleProject project, XElement configuration)
             {
                 var currentConfig = XsdPlugInConfiguration.FromXml(project, configuration.ToString());
 

@@ -4,9 +4,8 @@ using System.IO;
 using System.Xml;
 using System.Xml.XPath;
 
+using Sandcastle.Core;
 using Sandcastle.Platform.Windows.Design;
-
-using SandcastleBuilder.Utils;
 
 namespace XsdDocumentation.PlugIn
 {

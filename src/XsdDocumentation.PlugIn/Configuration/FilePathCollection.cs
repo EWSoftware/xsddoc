@@ -1,7 +1,7 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 
-using SandcastleBuilder.Utils;
+using Sandcastle.Core;
 
 namespace XsdDocumentation.PlugIn
 {

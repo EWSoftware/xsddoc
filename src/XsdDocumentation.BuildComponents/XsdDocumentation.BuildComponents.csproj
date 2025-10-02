@@ -68,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="EWSoftware.Sandcastle.Core">
-      <Version>2025.3.22</Version>
+      <Version>2025.9.30</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

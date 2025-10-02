@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows.Forms;
 
-using SandcastleBuilder.Utils;
+using Sandcastle.Core;
 
 namespace XsdDocumentation.PlugIn
 {
